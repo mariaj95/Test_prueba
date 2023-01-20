@@ -2,7 +2,6 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import unittest
 from webdriver_manager.chrome import ChromeDriverManager
-import HtmlTestRunner
 
 class LoginTest(unittest.TestCase):
     driver = webdriver.Chrome(ChromeDriverManager().install())
@@ -203,6 +202,6 @@ class LoginTest(unittest.TestCase):
         print("Test completed")
 
 if __name__ == '__main__':
-    unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output="C:/Users/maria/PycharmProjects/Reports"))
+    unittest.main()
 
-print("Que sera")
+print("Pruebas listas")
